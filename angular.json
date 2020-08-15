@@ -22,19 +22,48 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            
             "styles": [
               "src/styles.css"
+             
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "environments/environment-scss"
+              ]
+            }
           },
           "configurations": {
+            "qa": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.qa.ts"
+                }
+              ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "environments/environment-qa-scss"
+                ]
+              }
+            },
             "production": {
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "src/index.html",
+                  "with": "src/index.prod.html"
                 }
               ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "environments/environment-prod-scss"
+                ]
+              },
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -51,7 +80,7 @@
                   "maximumError": "5mb"
                 }
               ]
-            }
+            }           
           }
         },
         "serve": {
@@ -62,6 +91,9 @@
           "configurations": {
             "production": {
               "browserTarget": "my-app:build:production"
+            },
+            "qa": {
+              "browserTarget": "my-app:build:qa"
             }
           }
         },
