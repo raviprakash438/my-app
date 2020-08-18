@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+.dynamic-image{
+    background: aqua;
+    width: 100px;
+    height: 100px;
+    padding: 10,10,10,10;
+    content: url('https://abc.com/src/assets/image/1.jpg')
+}

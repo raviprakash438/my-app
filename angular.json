@@ -24,7 +24,8 @@
             ],
             
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/styles.img.css"
              
             ],
             "scripts": [],
@@ -55,8 +56,8 @@
                   "with": "src/environments/environment.prod.ts"
                 },
                 {
-                  "replace": "src/index.html",
-                  "with": "src/index.prod.html"
+                  "replace": "src/styles.img.css",
+                  "with": "src/styles.img.prod.css"
                 }
               ],
               "stylePreprocessorOptions": {
