@@ -25,13 +25,14 @@
             
             "styles": [
               "src/styles.css",
+              "src/styles.scss",
               "src/styles.img.css"
              
             ],
             "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "environments/environment-scss"
+                "src/environments/environment-scss"
               ]
             }
           },
@@ -45,7 +46,7 @@
               ],
               "stylePreprocessorOptions": {
                 "includePaths": [
-                  "environments/environment-qa-scss"
+                  "src/environments/environment-qa-scss"
                 ]
               }
             },
@@ -62,7 +63,7 @@
               ],
               "stylePreprocessorOptions": {
                 "includePaths": [
-                  "environments/environment-prod-scss"
+                  "src/environments/environment-prod-scss"
                 ]
               },
               "optimization": true,

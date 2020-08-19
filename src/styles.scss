@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "globalVars";
+
+.dynamic_img_url{
+    color:$color;
+    width: 100px;
+    height: 100px;
+    background: url($css-base-path+'/images/pages/contact/contact-bg.jpg') no-repeat;    
+}
